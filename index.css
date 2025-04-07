@@ -143,7 +143,9 @@ body {
     align-items: flex-start;
 }
 
-.grid-container > div { /* Áp dụng cho các .place... */
+
+
+.grid-container > a { /* Áp dụng cho các .place... */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -156,12 +158,13 @@ body {
     cursor: pointer; /* Con trỏ chuột */
     /* Animation cho thẻ địa điểm */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
-.grid-container > div:hover {
+.grid-container > a:hover {
     transform: translateY(-6px); /* Nhấc lên khi hover */
     box-shadow: 0 8px 15px rgba(0,0,0,0.25); /* Bóng đổ đậm hơn khi hover */
 }
-.grid-container > div:hover .overlay { /* Làm overlay rõ hơn khi hover */
+.grid-container > a:hover .overlay { /* Làm overlay rõ hơn khi hover */
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -255,6 +258,7 @@ body {
     cursor: pointer; /* Con trỏ chuột */
     /* Animation cho thẻ món ăn */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 .cuisine-item:hover {
     transform: translateY(-6px); /* Nhấc lên */
